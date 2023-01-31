@@ -2,6 +2,7 @@ body {
   background-image: url("/HTML/assets/homepage/Main\ Background.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-color: black;
 }
 body div {
   position: relative;

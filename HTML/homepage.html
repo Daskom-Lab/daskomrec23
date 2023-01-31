@@ -6,71 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore the Milky Way</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="tailwind.config.js"></script>
+    <link rel="icon" type="DLOR" href="/HTML/assets/homepage/DLOR 2023.svg" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontSize: {
+              ss: "0.3rem",
+            },
+            screens: {
+              phone: "370px",
+            },
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="container mx-auto">
-      <div class="flex flex-row justify-between mt-6 ml-6 mr-6">
-        <div>
+      <div class="flex flex-row justify-between mt-2 mr-2 ml-2 xl:mt-6 xl:ml-6 xl:mr-6">
+        <div class="w-8 md:w-auto">
           <a href="https://daskomlab.com/" target="_blank">
             <img src="/HTML/assets/homepage/DASKOM White.svg " alt="DASKOM" />
           </a>
         </div>
-        <div><img src="/HTML/assets/homepage/DLOR 2023.svg" /></div>
+        <div class="w-8 md:w-auto"><img src="/HTML/assets/homepage/DLOR 2023.svg" /></div>
       </div>
       <div class="title text-white m-2">
-        <h1>DASKOM LABOLATORY OPEN RECRUITMENT 2023</h1>
+        <h1 class="text-sm md:text-xl">DASKOM LABOLATORY OPEN RECRUITMENT 2023</h1>
       </div>
       <div class="flex justify-center">
-        <img src="/HTML/assets/homepage/Future Earth.gif" class="m-20 w-72" />
+        <img src="/HTML/assets/homepage/Future Earth.gif" class="m-20 w-24 xl:w-72" />
       </div>
-      <div class="text-white xl:m-12 2xl:m-28">
+      <div class="text-white xl:m-12 2xl:m-32">
         <p>#Explore the Milky Way</p>
         <p>Make Your Way Create The Future</p>
       </div>
       <div class="flex 2xl:mt-24 text-white justify-between">
         <div>
-          <img src="/HTML/assets/homepage/Black Hole.gif" class="w-80 ml-12" />
+          <img src="/HTML/assets/homepage/Black Hole.gif" class="w-80 ml-12 hidden md:block" />
         </div>
         <div>
-          <img src="/HTML/assets/homepage/Spaceship Pixel.png" class="w-16 rotate-[65deg] left-72" />
+          <img src="/HTML/assets/homepage/Spaceship Pixel.png" class="w-16 rotate-[65deg] left-72 hidden md:block" />
         </div>
-        <div class="mt-11 mr-11">
+        <div class="mt-11 mr-11 hidden md:block">
           <p>Final strech to</p>
           <p>our new home</p>
           <p>Letsgoooo!!</p>
         </div>
       </div>
-      <div class="flex justify-center">
-        <div class="text-white bg-sky-900 pt-2 pb-2 pr-12 pl-12 rounded-lg drop-shadow-xl shadow-teal">
-          <input type="button" class="button" value="LOGIN" />
+      <div class="flex justify-center mt-6 md:mt-0">
+        <div class="text-white bg-sky-900 pt-2 pb-2 pr-12 pl-12 rounded-lg shadow-inner hover:shadow-lg shadow-amber-900/50 ">
+          <a href="#"><input type="button" class="button" value="LOGIN" /></a>
         </div>
       </div>
       <div class="flex text-white justify-center justify-between">
-        <div class="pl-28">
+        <div class="pl-28 hidden md:block">
           <p>This little manuver gonna</p>
           <p>cost us 6 to 9 years</p>
         </div>
         <div>
-          <img src="/HTML/assets/homepage/Spaceship Pixel.png" class="w-16 rotate-[-69deg] xl:top-28 2xl:top-44 right-96" />
+          <img src="/HTML/assets/homepage/Spaceship Pixel.png" class="w-16 rotate-[-69deg] xl:top-28 2xl:top-40 right-96" />
         </div>
         <div>
-          <img src="/HTML/assets/homepage/Galaxy.gif" class="-top-20 -left-20 w-96 rotate-12" />
+          <img src="/HTML/assets/homepage/Galaxy.gif" class="-top-20 -left-20 w-96 rotate-12 hidden md:block" />
         </div>
       </div>
       <div class="flex text-white justify-between">
         <div>
-          <img src="/HTML/assets/homepage/Ice Giant.gif" class="-top-20 -left-20 w-70 rotate-12 ml-72" />
+          <img src="/HTML/assets/homepage/Ice Giant.gif" class="-top-20 -left-20 w-70 rotate-12 ml-72 hidden md:block" />
         </div>
-        <div class="mr-10 xl:-top-28 -top-8">
+        <div class="mr-10 xl:-top-28 -top-8 hidden md:block">
           <p>Our journey begin now</p>
           <p>Goodbye home...</p>
         </div>
       </div>
-      <div class="flex justify-center justify-between xl:mt-0 mt-11">
-        <div class="text-white text-left w-1/2 ml-32">
+      <div class="flex justify-center justify-between xl:mt-0 md:mt-11">
+        <div class="text-white md:text-left text-justify m-4 md:w-1/2 md:ml-32">
           <h1>DASKOM LAB</h1>
           <p>
             Laboratorium Dasar Komputer merupakan laboratorium di bawah naungan Fakultas Teknik Elektro, Univesitas Telkom yang memfasilitasi semua mahasiswa tingkat satu S1 Teknik Fisika, S1 Teknik Telekomunikasi, S1 Teknik Elektro, S1
@@ -78,10 +95,10 @@
           </p>
         </div>
         <div>
-          <img src="/HTML/assets/homepage/6500_2_01_DASKOM_PIXEL.png" class=" -top-20 left-44 z-10" />
+          <img src="/HTML/assets/homepage/6500_2_01_DASKOM_PIXEL.png" class="-top-20 left-44 z-10 hidden md:block" />
         </div>
         <div>
-          <img src="/HTML/assets/homepage/Moon.gif" class="mr-40" />
+          <img src="/HTML/assets/homepage/Moon.gif" class="mr-40 hidden md:block" />
         </div>
       </div>
       <div class="flex justify-center mt-12">
@@ -95,7 +112,7 @@
           <img src="/HTML/assets/homepage/youtube pixel.png" alt="youtube" />
         </a>
       </div>
-      <div class="text-center lg:text-black xl:text-white mt-12 mb-2">
+      <div class="text-center text-white mt-12 mb-2">
         <p>OFFICIAL DASKOM RECRUITMENT 2023</p>
       </div>
     </div>
