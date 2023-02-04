@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Arcade Classic";
+  src: url("/HTML/public/assets/font/Arcade-Classic.TTF");
+}
+@font-face {
+  font-family: "VP Pixel";
+  src: url("/HTML/public/assets/font/VP-Pixel.otf");
+}
+
+.title h1 {
+  font-family: "Arcade Classic";
+}
+
+h1 {
+  font-family: "VP Pixel";
+}
+
+p {
+  font-family: "VP Pixel";
+  font-size: 16px;
+}
+
+.button {
+  font-family: "VP Pixel";
+}
