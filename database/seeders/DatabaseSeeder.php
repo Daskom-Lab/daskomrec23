@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,11 +15,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        DB::table('passcheck')->insert([
+            'id' => 1,
+            'isActiveCheck' => 0,
+            'isPlotRun' => 0,
+        ]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        DB::table('statusstages')->insert([
+            'id' => 1,
+            'current_stage' => 1,
+        ]);
+
+        DB::table('passcheckmessages')->insert([
+            'pass' => 'Selamat kamu lolos tahap selanjutnya!',
+            'failed' => 'Tetap semangat yaa, kamu belum lolos:(',
+            'link' => 'https://daskomlab.com/'
+        ]);
     }
 }
