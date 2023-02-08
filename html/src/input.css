@@ -4,9 +4,9 @@
 
 @font-face {
   font-family: "Arcade Classic";
-  src: url("/assets/font/Arcade_Classic.ttf");
+  src: url("/html/assets/font/Arcade_Classic.ttf");
 }
 @font-face {
   font-family: "VP Pixel";
-  src: url("/assets/font/vp_pixel.otf");
+  src: url("/html/assets/font/vp_pixel.otf");
 }
