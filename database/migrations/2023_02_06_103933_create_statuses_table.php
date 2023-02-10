@@ -16,16 +16,8 @@ return new class extends Migration
         Schema::create('statuses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->boolean('isPass');
-            $table->unsignedBigInteger('datacaas_id');
-            $table->foreign('datacaas_id')
-                ->references('id')
-                ->on('datacaas')
-                ->onDelete('cascade');
-            $table->unsignedBigInteger('stages_id');
-            $table->foreign('stages_id')
-                ->references('id')
-                ->on('stages')
-                ->onDelete('cascade');
+            $table->foreignId('datacaas_id')->unsigned()->index('fk_statuses_to_datacaas');
+            $table->foreignId('stages_id')->unsigned()->index('fk_statuses_to_stages');
             $table->timestamps();
         });
     }

@@ -16,10 +16,7 @@ return new class extends Migration
         Schema::create('plotactives', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->boolean('isPlotActive');
-            $table->unsignedBigInteger('datacaas_id');
-            $table->foreign('datacaas_id')->references('id')
-                ->on('datacaas')
-                ->onDelete('cascade');
+            $table->foreignId('datacaas_id')->unsigned()->index('fk_plotactives_to_datacaas');
             $table->timestamps();
         });
     }

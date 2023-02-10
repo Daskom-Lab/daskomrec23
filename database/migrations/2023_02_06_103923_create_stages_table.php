@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('statusstages', function (Blueprint $table) {
+        Schema::create('stages', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('current_stage')->unique();
+            $table->string('stagesname');
+            $table->foreignId('statusstages_id')->unsigned()->index('fk_stages_to_statusstages');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('statusstages');
+        Schema::dropIfExists('stages');
     }
 };

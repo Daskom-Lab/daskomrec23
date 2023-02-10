@@ -13,14 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('stagenames', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('name');
-            $table->unsignedBigInteger('statusstages_id');
-            $table->foreign('statusstages_id')->references('id')
+        Schema::table('stages', function (Blueprint $table) {
+            $table->foreign('statusstages_id', 'fk_stages_to_statusstages')->references('id')
                 ->on('statusstages')
                 ->onDelete('cascade');
-            $table->timestamps();
         });
     }
 
@@ -31,6 +27,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('stagenames');
+        Schema::table('stages', function (Blueprint $table) {
+            $table->dropForeign('fk_stages_to_statusstages');
+        });
     }
 };

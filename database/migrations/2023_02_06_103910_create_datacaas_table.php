@@ -13,14 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('assistantcontacts', function (Blueprint $table) {
+        Schema::create('datacaas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->longText('photo');
-            $table->string('ascod', 3);
             $table->string('name');
-            $table->string('nohp');
-            $table->string('line');
-            $table->string('instagram');
+            $table->string('email')->unique();
+            $table->string('nim')->unique();
+            $table->string('major');
+            $table->string('class');
+            $table->longText('photo');
+            $table->string('password');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -32,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('assistantcontacts');
+        Schema::dropIfExists('datacaas');
     }
 };

@@ -13,9 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('stages', function (Blueprint $table) {
+        Schema::create('plots', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('stages_squence')->unsigned();
+            $table->foreignId('datacaas_id')->unsigned()->index('fk_plots_to_datacaas');
+            $table->foreignId('shifts_id')->unsigned()->index('fk_plots_to_shifts');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('stages');
+        Schema::dropIfExists('plots');
     }
 };
