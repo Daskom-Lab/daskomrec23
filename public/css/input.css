@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Arcade Classic";
+  src: url("/public/assets/font/Arcade_Classic.ttf");
+}
+@font-face {
+  font-family: "VP Pixel";
+  src: url("/public/assets/font/vp_pixel.otf");
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar.open .hide {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar.open li a .hide {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar.open li .hide {
+  opacity: 1;
+  pointer-events: auto;
+}
