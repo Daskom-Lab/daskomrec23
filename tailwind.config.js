@@ -9,6 +9,10 @@ module.exports = {
       dropShadow: {
         "brown-shadow": "0px 0px 6px rgba(180, 113, 7, 0.8)", //use in homepage
       },
+      fontFamily: {
+        arcade: ['"Arcade Classic"'],
+        pixel: ['"VP Pixel"'],
+      },
     },
   },
   plugins: [],
