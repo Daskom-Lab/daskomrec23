@@ -19,6 +19,7 @@ class DataCaas extends Authenticatable
     ];
 
     protected $fillable = [
+        'name',
         'email',
         'nim',
         'major',
