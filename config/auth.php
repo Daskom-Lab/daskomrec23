@@ -40,6 +40,21 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+        'datacaas' => [
+            'redirectTo' => 'loginCaas',
+            'driver' => 'session',
+            'provider' => 'datacaas',
+        ],
+        'admin' => [
+            'redirectTo' => 'loginAdmin',
+            'driver' => 'session',
+            'provider' => 'admin',
+        ],
     ],
 
     /*
