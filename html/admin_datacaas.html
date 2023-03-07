@@ -19,14 +19,23 @@
         font-family: "VP Pixel";
         src: url("/public/assets/font/vp_pixel.otf");
     }
-    
+
+    .buttonText:hover {
+        text-shadow: 0px 0px 10px #F0A164;
+    }
+
+    .buttonText:active {
+        text-shadow: 0px 0px 10px #ffd0a9;
+    }
 </style>
 
 <body class="bg-[url(/public/assets/admin_datacaas/Main_Background.png)] bg-cover bg-center h-screen w-screen flex flex-col justify-evenly items-center">
         <h1 class="font-arcade text-white text-3xl text-center">DATA CAAS</h1>
         <!-- white transparent box thingy -->
         <div class="flex flex-col justify-evenly items-center h-32 w-2/4 bg-white bg-opacity-10">
-            <input type="text" placeholder="BUAT AKUN CAAS" class="w-48 h-14 bg-[#00172B] font-arcade text-center text-white shadow-[inset_0px_0px_8px_2px_#FFFFFF] rounded-[8px] duration-200 hover:shadow-[inset_0px_0px_8px_2px_#f3964a] active:shadow-[inset_0px_0px_8px_2px_#ffd0a9]">
+            <button class="w-48 h-14 bg-[#00172B] font-arcade text-center text-white shadow-[inset_0px_0px_8px_2px_#FFFFFF] rounded-[8px] duration-200 hover:shadow-[inset_0px_0px_8px_2px_#f3964a] active:shadow-[inset_0px_0px_8px_2px_#ffd0a9]">
+                <h1 class="duration-200 buttonText flex justify-center items-center h-[48px] hover:text-lg active:text-base">BUAT AKUN CAAS</h1>
+            </button>
             <div class="flex justify-around w-full font-arcade text-white text-xl">
                 <div class="flex"><h1>TOTAL CAAS : &nbsp</h1><h1 id="totalCaas">50</h1></div>
                 <div class="flex"><h1>TOTAL LULUS : &nbsp</h1><h1 id="totalLulus">30</h1></div>
