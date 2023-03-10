@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="icon" type="DLOR" href="/public/assets/homepage/DLOR_2023.svg" />
+    <title>Data CAAS</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: "Arcade Classic";
+        src: url("/public/assets/font/Arcade_Classic.ttf");
+    }
+
+    @font-face {
+        font-family: "VP Pixel";
+        src: url("/public/assets/font/vp_pixel.otf");
+    }
+
+    .buttonText:hover {
+        text-shadow: 0px 0px 10px #F0A164;
+    }
+
+    .buttonText:active {
+        text-shadow: 0px 0px 10px #ffd0a9;
+    }
+</style>
+
+<body class="bg-[url(/public/assets/admin_datacaas/Main_Background.png)] bg-cover bg-center h-screen w-screen flex flex-col justify-evenly items-center">
+        <h1 class="font-arcade text-white text-3xl text-center">DATA CAAS</h1>
+        <!-- white transparent box thingy -->
+        <div class="flex flex-col justify-evenly items-center h-32 w-2/4 bg-white bg-opacity-10">
+            <button class="w-48 h-14 bg-[#00172B] font-arcade text-center text-white shadow-[inset_0px_0px_8px_2px_#FFFFFF] rounded-[8px] duration-200 hover:shadow-[inset_0px_0px_8px_2px_#f3964a] active:shadow-[inset_0px_0px_8px_2px_#ffd0a9]">
+                <h1 class="duration-200 buttonText flex justify-center items-center h-[48px] hover:text-lg active:text-base">BUAT AKUN CAAS</h1>
+            </button>
+            <div class="flex justify-around w-full font-arcade text-white text-xl">
+                <div class="flex"><h1>TOTAL CAAS : &nbsp</h1><h1 id="totalCaas">50</h1></div>
+                <div class="flex"><h1>TOTAL LULUS : &nbsp</h1><h1 id="totalLulus">30</h1></div>
+                <div class="flex"><h1>TOTAL GAGAL : &nbsp</h1><h1 id="totalGagal">20</h1></div>
+            </div>
+        </div>
+        <!-- search bar name caas -->
+        <div class="pt-2 relative mx-auto text-white font-arcade">
+            <input class="searchBar w-72 border-2 border-gray-300 bg-opacity-10 bg-gray-100 h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+              type="search" name="search" placeholder="Cari  Nama  CAAS">
+            <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+              <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve"
+                width="512px" height="512px">
+                <path
+                  d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+              </svg>
+            </button>
+        </div>
+        <!-- table of caas -->
+        <table class="shadow-lg bg-white border-collapse font-arcade">
+            <tr class="bg-[#00111E] text-[#E1F2FF] text-center">
+              <th class="border border-[#E1F2FF]">NO</th>
+              <th class="border border-[#E1F2FF]">NAMA</th>
+              <th class="border border-[#E1F2FF]">NIM</th>
+              <th class="border border-[#E1F2FF]">ID  LINE</th>
+              <th class="border border-[#E1F2FF]">STATUS</th>
+              <th class="border border-[#E1F2FF]">TAHAP</th>
+              <th class="border border-[#E1F2FF]">OPSI</th>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+              <td class="border border-[#00111E] px-2">01</td>
+              <td class="border border-[#00111E] px-10">M. Aushaf Al Farras</td>
+              <td class="border border-[#00111E] px-10">1102210215</td>
+              <td class="border border-[#00111E] px-10">alfalpha_</td>
+              <td class="text-[#426006] border border-[#00111E] px-10">Lolos</td>
+              <td class="border border-[#00111E] px-10">Wawancara</td>
+              <td class="border border-[#00111E] px-10">
+                <button class="duration-200 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+              </td>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+                <td class="border border-[#00111E]">02</td>
+                <td class="border border-[#00111E]">M. Aushaf Al Farras</td>
+                <td class="border border-[#00111E]">1102210215</td>
+                <td class="border border-[#00111E]">alfalpha_</td>
+                <td class="text-[#BF262F] border border-[#00111E]">Gagal</td>
+                <td class="border border-[#00111E]">Teaching</td>
+                <td class="border border-[#00111E]">
+                  <button class="duration-200 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+                </td>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+                <td class="border border-[#00111E]">03</td>
+                <td class="border border-[#00111E]">M. Aushaf Al Farras</td>
+                <td class="border border-[#00111E]">1102210215</td>
+                <td class="border border-[#00111E]">alfalpha_</td>
+                <td class="text-[#426006] border border-[#00111E]">Lolos</td>
+                <td class="border border-[#00111E]">Tulis & Coding</td>
+                <td class="border border-[#00111E]">
+                    <button class="duration-200 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+                </td>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+                <td class="border border-[#00111E]">04</td>
+                <td class="border border-[#00111E]">M. Aushaf Al Farras</td>
+                <td class="border border-[#00111E]">1102210215</td>
+                <td class="border border-[#00111E]">alfalpha_</td>
+                <td class="border border-[#00111E]">Lolos</td>
+                <td class="border border-[#00111E]">Wawancara</td>
+                <td class="border border-[#00111E]">
+                    <button class="duration-200 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+                </td>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+                <td class="border border-[#00111E]">05</td>
+                <td class="border border-[#00111E]">M. Aushaf Al Farras</td>
+                <td class="border border-[#00111E]">1102210215</td>
+                <td class="border border-[#00111E]">alfalpha_</td>
+                <td class="border border-[#00111E]">Lolos</td>
+                <td class="border border-[#00111E]">Wawancara</td>
+                <td class="border border-[#00111E]">
+                    <button class="duration-200 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+                </td>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+                <td class="border border-[#00111E]">06</td>
+                <td class="border border-[#00111E]">M. Aushaf Al Farras</td>
+                <td class="border border-[#00111E]">1102210215</td>
+                <td class="border border-[#00111E]">alfalpha_</td>
+                <td class="border border-[#00111E]">Lolos</td>
+                <td class="border border-[#00111E]">Wawancara</td>
+                <td class="border border-[#00111E]">
+                    <button class="duration-200 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+                </td>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+                <td class="border border-[#00111E]">07</td>
+                <td class="border border-[#00111E]">M. Aushaf Al Farras</td>
+                <td class="border border-[#00111E]">1102210215</td>
+                <td class="border border-[#00111E]">alfalpha_</td>
+                <td class="border border-[#00111E]">Lolos</td>
+                <td class="border border-[#00111E]">Wawancara</td>
+                <td class="border border-[#00111E]">
+                    <button class="duration-200 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+                </td>
+            </tr>
+            <tr class="text-[#00111E] text-center">
+                <td class="border border-[#00111E]">08</td>
+                <td class="border border-[#00111E]">M. Aushaf Al Farras</td>
+                <td class="border border-[#00111E]">1102210215</td>
+                <td class="border border-[#00111E]">alfalpha_</td>
+                <td class="border border-[#00111E]">Lolos</td>
+                <td class="border border-[#00111E]">Wawancara</td>
+                <td class="border border-[#00111E]">
+                    <button class="duration-100 hover:underline active:text-[#00111e6b]"><h1>Edit</h1></button>
+                </td>
+            </tr>
+          </table>
+          <!-- footer stuff -->
+          <div class="flex justify-center font-pixel text-white text-[14px]"> <h1>OFFICIAL DASKOM LAB RECRUITMENT 2023. </h1></div>
+</body>
+</html>
