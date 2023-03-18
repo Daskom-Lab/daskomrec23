@@ -18,7 +18,7 @@ class Stages extends Model
 
     protected $fillable = [
         'stagesname',
-        'statusstages_id',
+        'statusActive',
         'created_at',
         'updated_at',
     ];

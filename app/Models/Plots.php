@@ -17,6 +17,7 @@ class Plots extends Model
     ];
 
     protected $fillable = [
+        'isPlotActive',
         'datacaas_id',
         'shifts_id',
         'created_at',

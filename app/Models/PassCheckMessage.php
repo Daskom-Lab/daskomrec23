@@ -9,7 +9,7 @@ class PassCheckMessage extends Model
 {
     use HasFactory;
 
-    protected $table = 'passcheckmessage';
+    protected $table = 'passcheckmessages';
 
     protected $dates = [
         'created_at',

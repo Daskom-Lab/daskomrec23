@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('stages', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('stagesname');
-            $table->foreignId('statusstages_id')->unsigned()->index('fk_stages_to_statusstages');
+            $table->boolean('statusActive');
             $table->timestamps();
         });
     }

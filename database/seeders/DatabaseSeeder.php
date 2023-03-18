@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\DataCaas;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -18,7 +20,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             PassCheckMessageSeeder::class,
             PassCheckSeeder::class,
-            StatusStagesSeeder::class
+            AdminSeeder::class,
+            StagesSeeder::class,
+            DatacaasSeeder::class,
+            AssistantContactSeeder::class,
         ]);
     }
 }
