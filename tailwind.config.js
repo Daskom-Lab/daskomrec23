@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "space-milkyway": "url('/public/assets/homepage/Main_Background.png')",
-        "dark-space": "url('/public/assets/Space_Background.png')",
+        "space-milkyway": "url('/assets/homepage/Main_Background.png')",
+        "dark-space": "url('/assets/Space_Background.png')",
       },
       boxShadow: {
         "semi-sm": "0px 0px 8px 2px rgba(0, 0, 0, 0.3)",
@@ -50,7 +50,7 @@ module.exports = {
         10: "10ms",
       },
       cursor: {
-        "space-ship": "url('/public/assets/cursor/space_ship.cur'), default",
+        "space-ship": "url('/assets/cursor/space_ship.cur'), default",
       },
     },
   },

@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "Arcade Classic";
-  src: url("/public/assets/font/Arcade_Classic.ttf");
+  src: url("/assets/font/Arcade_Classic.ttf");
 }
 @font-face {
   font-family: "VP Pixel";
-  src: url("/public/assets/font/vp_pixel.otf");
+  src: url("/assets/font/vp_pixel.otf");
 }
 
 body::-webkit-scrollbar {

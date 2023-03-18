@@ -5,20 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore the Milky Way</title>
-    @vite('public/css/output.css')
+    <link href="{{ asset('css/output.css') }}" rel="stylesheet">
     <link rel="icon" type="DLOR" href="{{ asset('/assets/homepage/DLOR_2023.svg') }}" />
   </head>
   <body class="bg-dark-space bg-black bg-cover cursor-space-ship">
     <div class="container">
         @include('partials.sidebarCaas')
 
-      <!-- <div class="fixed left-0 right-0 pt-14 flex justify-center">
-        <div class="bg-green-400 succsess fixed text-green-800 text-center font-pixel rounded-md px-2 py-1">Jadwal Sukses Dipilih!</div>
-      </div> -->
-
-      {{-- <div class="fixed left-0 right-0 pt-14 flex justify-center">
-        <div class="bg-red-500 failed fixed text-red-800 text-center font-pixel rounded-md px-2 py-1">Jadwal Tidak Bisa Dipilih!</div>
-      </div> --}}
 
       <div class="flex flex-col justify-around items-center h-3/5">
         <div class="pt-28">
