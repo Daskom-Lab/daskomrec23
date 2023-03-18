@@ -333,18 +333,6 @@ Route::post('/resetPlot', function () {
 Route::post('takeplot/{id}', [PlotController::class, 'takePlot'])->name('takePlot')->middleware('auth:datacaas');
 
 //Add Caas
-// Route::post('/AddStatus', function (){
-//     $caas_id = DataCaas::latest()->first();
-//     $stages = Stages::get();
-
-//     Statuses::create([
-//         'datacaas_id'=>$caas_id->id,
-//         'stages_id'=>$stages->id,
-//         'isPass'=>$request->isPass,
-//     ]);
-//     return redirect('caasAccount');
-
-// })->name('AddStatus')->middleware('auth:admin');
 Route::post('/AddCaas', [CaasController::class,'add'])->name('Addcaas')->middleware('auth:admin');
 Route::get('/EditCaasAccount/{datacaas_id}', [CaasController::class,'edit'])->name('EditCaasAccount')->middleware('auth:admin');
 Route::post('/UpdateCaasAccount/{datacaas_id}', [CaasController::class,'update'])->name('UpdateCaasAccount')->middleware('auth:admin');
