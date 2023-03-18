@@ -40,6 +40,21 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+            'driver' => 'token',
+            'provider' => 'users',
+            'hash' => false,
+        ],
+        'datacaas' => [
+            'redirectTo' => 'loginCaas',
+            'driver' => 'session',
+            'provider' => 'datacaas',
+        ],
+        'admin' => [
+            'redirectTo' => 'loginAdmin',
+            'driver' => 'session',
+            'provider' => 'admin',
+        ],
     ],
 
     /*
@@ -64,6 +79,16 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
+        'datacaas' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\DataCaas::class,
+            'table' => 'datacaas',
+        ],
+        'admin' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admins::class,
+            'table' => 'admins',
+        ]
 
         // 'users' => [
         //     'driver' => 'database',

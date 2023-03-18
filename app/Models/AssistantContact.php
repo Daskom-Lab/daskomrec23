@@ -9,7 +9,7 @@ class AssistantContact extends Model
 {
     use HasFactory;
 
-    protected $table = 'assistantcontact';
+    protected $table = 'assistantcontacts';
 
     protected $dates = [
         'created_at',

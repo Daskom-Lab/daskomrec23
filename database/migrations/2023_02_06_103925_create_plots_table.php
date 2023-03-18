@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('plots', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->boolean('isPlotActive');
             $table->foreignId('datacaas_id')->unsigned()->index('fk_plots_to_datacaas');
             $table->foreignId('shifts_id')->unsigned()->index('fk_plots_to_shifts');
             $table->timestamps();
