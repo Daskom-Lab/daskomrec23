@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore the Milky Way</title>
-    @vite('public/css/output.css')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/output.css') }}">
     <link rel="icon" type="DLOR" href="{{ asset('/assets/favicon.ico') }}" />
  </head>
   <body class="bg-dark-space bg-black bg-cover cursor-space-ship">
@@ -17,7 +17,7 @@
             <div class="flex justify-center pt-12 rounded-lg w-64 h-120 md:w-115 md:h-124 bg-dark-sky shadow-semi-lg shadow-yellow-300 text-white align-middle">
               <div>
                 <div class="flex justify-center">
-                  <img src="assets/caas/logo.png" class="h-48 rounded-xl" alt="FOTO CAAS">
+                  <img src="assets/caas/{{ $datacaas->nim }}.jpg" class="h-48 rounded-xl" alt="FOTO CAAS">
                 </div>
                 <div class="mx-3 mt-3">
                     <div class="mt-5">

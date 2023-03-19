@@ -47,7 +47,7 @@ class AdminController extends Controller
     public function changepass(Request $request)
     {
         $this->validate($request, [
-            'password'  => 'required|min:8|string|regex:/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/',
+            'password'  => 'required|min:8|string       ',
         ]);
         $admin = Admins::find(Auth::id());
         $admin->update([

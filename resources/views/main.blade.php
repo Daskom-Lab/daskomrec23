@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore the Milky Way</title>
-    @vite('public/css/output.css')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/output.css') }}">
     <link rel="icon" type="DLOR" href="{{ asset('/assets/favicon.ico') }}" />
   </head>
   <body class="bg-space-milkyway bg-black bg-cover cursor-space-ship">
@@ -36,9 +36,6 @@
         <div>
           <img src="{{ asset('/assets/homepage/Black_Hole.gif') }}" class="w-80 ml-12 hidden md:block" />
         </div>
-        <div>
-          <img src="{{ asset('assets/homepage/Spaceship_Pixel.png') }}" class="relative w-16 rotate-[65deg] left-72 hidden md:block" />
-        </div>
         <div class="font-pixel mt-8 mr-11 hidden md:block">
           <p>Final strech to</p>
           <p>our new home</p>
@@ -54,9 +51,6 @@
         <div class="font-pixel pl-28 hidden md:block">
           <p>This little manuver gonna</p>
           <p>cost us 6 to 9 years</p>
-        </div>
-        <div>
-          <img src="{{ asset('/assets/homepage/Spaceship_Pixel.png') }}" class="relative w-16 rotate-[-69deg] md:top-24 right-96 hidden md:block" />
         </div>
         <div>
           <img src="{{ asset('/assets/homepage/Galaxy.gif') }}" class="relative -top-20 -left-20 w-96 rotate-12 hidden md:block" />
@@ -83,7 +77,7 @@
           <img src="{{ asset('/assets/homepage/Pixel_Astro.png') }}" class="relative -top-20 left-44 z-10 hidden md:block" />
         </div>
         <div>
-          <img src="{{ asset('/assets/homepage/Moon.gif') }}" class="mr-40 hidden md:block" />
+          <img src="{{ asset('/assets/homepage/Moon.png') }}" class="mr-40 hidden md:block" />
         </div>
       </div>
       <div class="flex justify-center mt-12">

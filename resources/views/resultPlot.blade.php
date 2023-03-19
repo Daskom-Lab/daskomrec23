@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore the Milky Way</title>
-    @vite('public/css/output.css')
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/output.css') }}">
     <link rel="icon" type="DLOR" href="{{ asset('/assets/homepage/DLOR_2023.svg') }}" />
  </head>
  <body class="bg-dark-space bg-black bg-cover cursor-space-ship">
@@ -15,13 +15,13 @@
 <div class="mx-3 mt-10 bg-deep-sky rounded-xl shadow-semi-sm shadow-dark-sun">
     <div class="pt-5 flex justify-center text-center font-arcade text-white text-2xl">
         <div>
-          <div class="">
+          <div>
             <p>Hasil Plot Daskom Laboratory Open Recruitment</p>
           </div>
-          <div class="">
+          <div>
             <p>Total Jadwal : {{$countshift}}</p>
           </div>
-          <p class="">
+          <p>
             <span>Total Caas Sudah pilih jadwal : {{$plot->count()}}</span>
           </p>
         </div>
