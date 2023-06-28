@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="icon" type="DLOR" href="/public/assets/homepage/DLOR_2023.svg" />
+    <title>Admin Dashboard</title>
+</head>
+
+<style>
+    @font-face {
+        font-family: "Arcade Classic";
+        src: url("/public/assets/font/Arcade_Classic.ttf");
+    }
+
+    @font-face {
+        font-family: "VP Pixel";
+        src: url("/public/assets/font/vp_pixel.otf");
+    }
+
+    @font-face {
+        font-family: "American Captain";
+        src: url("/public/assets/font/American\ Captain.ttf");
+    }
+
+    .buttonText:hover {
+        text-shadow: 0px 0px 10px #F0A164;
+    }
+
+    .buttonText:active {
+        text-shadow: 0px 0px 10px #ffd0a9;
+    }
+</style>
+
+<body class="bg-[url(/public/assets/admin_dashboard/Main_Background.png)] bg-cover bg-center h-screen flex flex-col justify-center items-center">
+    <div class="flex justify-center">
+        <div class="flex flex-col justify-center items-center border-dashed border-[5px] rounded-[6rem] w-[28.75rem] h-[18rem] mt-2">
+            <h1 class="text-4xl text-white font-captain">WELCOME, ADMIN</h1>
+            <h1 class="text-4xl text-white font-captain">STATUS &nbsp:</h1>
+            <div class="flex text-2xl font-captain">
+                <h3 class="text-white ">PENGUMUMAN &nbsp:&nbsp</h3>
+                <h3 class="text-[#D4EE9F]">ON</h3>
+            </div>
+            <div class="flex text-2xl font-captain">
+                <h3 class="text-white ">JADWAL &nbsp:&nbsp</h3>
+                <h3 class="text-[#EC3D32]">OFF</h3>
+            </div>
+            <div class="flex text-2xl font-captain">
+                <h3 class="text-white ">TAHAP &nbsp:&nbsp</h3>
+                <h3 class="text-[#7D8993]">TES TULIS & CODING</h3>
+            </div>
+            <div class="flex text-2xl font-captain">
+                <h3 class="text-white ">PLOT &nbsp:&nbsp</h3>
+                <h3 class="text-[#EC3D32]">OFF</h3>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col justify-evenly items-center text-white text-opacity-50 text-base font-arcade h-1/2">
+        <button class="w-[192px] h-[48px] bg-[#00172B] text-center shadow-[inset_0px_0px_8px_2px_#FFFFFF] rounded-[8px] duration-200 hover:shadow-[0px_0px_8px_2px_#F0A164] hover:bg-[#233B4E] active:shadow-[inset_0px_0px_8px_2px_#ffd0a9]">
+            <h1 class="buttonText flex justify-center items-center h-[48px] hover:text-lg active:text-base">DATA CAAS</h1>
+        </button>
+        <button class="w-[192px] h-[48px] bg-[#00172B] text-center shadow-[inset_0px_0px_8px_2px_#FFFFFF] rounded-[8px] duration-200 hover:shadow-[0px_0px_8px_2px_#F0A164] hover:bg-[#233B4E] active:shadow-[inset_0px_0px_8px_2px_#ffd0a9]">
+            <h1 class="buttonText flex justify-center items-center h-[48px] hover:text-lg active:text-base">SHIFT</h1>
+        </button>
+        <button class="w-[192px] h-[48px] bg-[#00172B] text-center shadow-[inset_0px_0px_8px_2px_#FFFFFF] rounded-[8px] duration-200 hover:shadow-[0px_0px_8px_2px_#F0A164] hover:bg-[#233B4E] active:shadow-[inset_0px_0px_8px_2px_#ffd0a9]">
+            <h1 class="buttonText flex justify-center items-center h-[48px] hover:text-lg active:text-base">SET CEK LULUS</h1>
+        </button>
+        <button class="w-[192px] h-[48px] bg-[#00172B] text-center shadow-[inset_0px_0px_8px_2px_#FFFFFF] rounded-[8px] duration-200 hover:shadow-[0px_0px_8px_2px_#F0A164] hover:bg-[#233B4E] active:shadow-[inset_0px_0px_8px_2px_#ffd0a9]">
+            <h1 class="buttonText flex justify-center items-center h-[48px] hover:text-lg active:text-base">KELUAR</h1>
+        </button>
+    </div>
+    <div class="flex justify-center font-pixel text-white text-[14px]"> <h1>OFFICIAL DASKOM LAB RECRUITMENT 2023. </h1></div>
+</body>
+</html>
